@@ -10,7 +10,7 @@ export class Details {
     this.getDetails(id);
   }
   async getDetails(id) {
-    document.querySelector(".loader").classList.remove("d-none");
+    document.querySelector(".loader-overlay").classList.remove("d-none");
     const options = {
       method: "GET",
       headers: {
@@ -28,7 +28,7 @@ export class Details {
     } catch (error) {
       console.log(error);
     } finally {
-      document.querySelector(".loader").classList.add("d-none");
+      document.querySelector(".loader-overlay").classList.add("d-none");
     }
   }
 }
