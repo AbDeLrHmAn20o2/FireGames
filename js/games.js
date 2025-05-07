@@ -13,6 +13,7 @@ export class Games {
     });
   }
   async getData(category) {
+    document.querySelector(".loader").classList.remove("d-none");
     const options = {
       method: "GET",
       headers: {
@@ -20,13 +21,19 @@ export class Games {
         "x-rapidapi-host": "free-to-play-games-database.p.rapidapi.com",
       },
     };
-    const api = await fetch(
-      `https://free-to-play-games-database.p.rapidapi.com/api/games?category=${category}`,
-      options
-    );
-    const response = await api.json();
-    this.ui.displayGamesData(response);
-    this.OpenLayer();
+    try {
+      const api = await fetch(
+        `https://free-to-play-games-database.p.rapidapi.com/api/games?category=${category}`,
+        options
+      );
+      const response = await api.json();
+      this.ui.displayGamesData(response);
+      this.OpenLayer();
+    } catch (error) {
+      console.log(error);
+    } finally {
+      document.querySelector(".loader").classList.add("d-none");
+    }
   }
 
   OpenLayer() {
