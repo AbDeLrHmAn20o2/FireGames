@@ -1,0 +1,55 @@
+body {
+  background-color: #272b30;
+}
+::-webkit-scrollbar {
+  height: 10px;
+}
+::-webkit-scrollbar-track{
+  background: rgb(0, 0,0, 0.6);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(218, 215, 215);
+  border-radius: 10px;
+}
+#cardImg {
+  height: 100%;
+  object-fit: cover;
+}
+header img {
+  max-height: 30vh;
+  object-fit: cover;
+}
+.card {
+  cursor: pointer;
+}
+.navbar {
+  background-color: rgb(123, 58, 58) !important;
+  box-shadow: 0 0 10px 6px rgb(0 0 0 / 0.7) !important;
+}
+.navbar a {
+  transition: all 0.4s ease-in-out;
+  font-weight: bolder;
+  text-shadow: 2px 2px 15px black;
+}
+.navbar a:hover {
+  color: black !important;
+}
+.navLogo {
+  max-width: 40px;
+}
+.active {
+  color: #000000 !important;
+}
+.card {
+  transition: all 0.4s ease-in-out;
+  filter: grayscale(0.7);
+  background-color: #272b30;
+  color: white;
+  box-shadow: #000000 0 0 20px 1px;
+}
+
+.card:hover {
+  scale: 1.04;
+  filter: grayscale(0);
+}
