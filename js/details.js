@@ -10,6 +10,7 @@ export class Details {
     this.getDetails(id);
   }
   async getDetails(id) {
+    document.querySelector(".loader").classList.remove("d-none");
     const options = {
       method: "GET",
       headers: {
@@ -17,11 +18,17 @@ export class Details {
         "x-rapidapi-host": "free-to-play-games-database.p.rapidapi.com",
       },
     };
-    const api = await fetch(
-      `https://free-to-play-games-database.p.rapidapi.com/api/game?id=${id}`,
-      options
-    );
-    const response = await api.json();
-    this.ui.displayGameInfo(response);
+    try {
+      const api = await fetch(
+        `https://free-to-play-games-database.p.rapidapi.com/api/game?id=${id}`,
+        options
+      );
+      const response = await api.json();
+      this.ui.displayGameInfo(response);
+    } catch (error) {
+      console.log(error);
+    } finally {
+      document.querySelector(".loader").classList.add("d-none");
+    }
   }
 }
