@@ -13,7 +13,7 @@ export class Games {
     });
   }
   async getData(category) {
-    document.querySelector(".loader").classList.remove("d-none");
+    document.querySelector(".loader-overlay").classList.remove("d-none");
     const options = {
       method: "GET",
       headers: {
@@ -32,7 +32,7 @@ export class Games {
     } catch (error) {
       console.log(error);
     } finally {
-      document.querySelector(".loader").classList.add("d-none");
+      document.querySelector(".loader-overlay").classList.add("d-none");
     }
   }
 
