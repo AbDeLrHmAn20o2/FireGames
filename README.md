@@ -88,19 +88,6 @@
 
 ---
 
-## 📸 Screenshots
-
-### 🏠 Home Page
-![Home Page](https://via.placeholder.com/800x400/0f172a/10b981?text=FireGames+Home)
-
-### 🎯 Game Details
-![Game Details](https://via.placeholder.com/800x400/0f172a/14b8a6?text=Game+Details+Modal)
-
-### 📱 Mobile View
-![Mobile View](https://via.placeholder.com/400x800/0f172a/06b6d4?text=Mobile+Responsive)
-
----
-
 ## 🛠️ Technologies
 
 ### **Frontend**
@@ -377,8 +364,7 @@ in the Software without restriction...
 **AbDeLrHmAn20o2**
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AbDeLrHmAn20o2)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/your-handle)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/m/in/abdelrhman2002)
 
 **Project Link:** [https://github.com/AbDeLrHmAn20o2/FireGames](https://github.com/AbDeLrHmAn20o2/FireGames)
 
